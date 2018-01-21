@@ -26,3 +26,6 @@
         * [账户系统文件](chapter2/Linux用户和组管理/账户系统文件.md)
         * [账户管理](chapter2/Linux用户和组管理/账户管理.md)
         * [用户和组状态](chapter2/Linux用户和组管理/用户和组状态.md)
+    * [Linux 文件权限管理](chapter2/Linux文件权限管理.md)
+        * [查看文件和目录的权限](chapter2/Linux文件权限管理/查看文件和目录的权限.md)
+        * [更改操作权限](chapter2/Linux文件权限管理/更改操作权限.md)
