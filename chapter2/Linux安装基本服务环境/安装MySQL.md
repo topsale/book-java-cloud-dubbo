@@ -92,7 +92,7 @@ select @@validate_password_length;
 ```
 
 ```
-set validate_password_length=1;
+set global validate_password_length=1;
 ```
 
 ### 授权 root 用户允许所有人连接
