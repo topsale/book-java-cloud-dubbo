@@ -13,3 +13,7 @@ https://topsale.gitbooks.io/java-cloud-dubbo/content/
 ## 本书代码
 
 https://github.com/topsale/code-java-cloud-dubbo.git
+
+## 本书文档
+
+https://github.com/topsale/book-java-cloud-dubbo.git
