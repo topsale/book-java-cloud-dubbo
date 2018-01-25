@@ -1,0 +1,201 @@
+# 其它 th 标签
+
+---
+
+<table>
+<tbody><tr>
+  <td>th:abbr</td>
+  <td>th:accept</td>
+  <td>th:accept-charset</td>
+</tr>
+<tr>
+  <td>th:abbr</td>
+  <td>th:accept</td>
+  <td>th:accept-charset</td>
+</tr>
+<tr>
+  <td>th:accesskey</td>
+  <td>th:action</td>
+  <td>th:align</td>
+</tr>
+<tr>
+  <td>th:alt</td>
+  <td>th:archive</td>
+  <td>th:audio</td>
+</tr>
+<tr>
+  <td>th:autocomplete</td>
+  <td>th:axis</td>
+  <td>th:background</td>
+</tr>
+<tr>
+  <td>th:bgcolor</td>
+  <td>th:border</td>
+  <td>th:cellpadding</td>
+</tr>
+<tr>
+  <td>th:cellspacing</td>
+  <td>th:challenge</td>
+  <td>th:charset</td>
+</tr>
+<tr>
+  <td>th:cite</td>
+  <td>th:class</td>
+  <td>th:classid</td>
+</tr>
+<tr>
+  <td>th:codebase</td>
+  <td>th:codetype</td>
+  <td>th:cols</td>
+</tr>
+<tr>
+  <td>th:colspan</td>
+  <td>th:compact</td>
+  <td>th:content</td>
+</tr>
+<tr>
+  <td>th:contenteditable</td>
+  <td>th:contextmenu</td>
+  <td>th:data</td>
+</tr>
+<tr>
+  <td>th:datetime</td>
+  <td>th:dir</td>
+  <td>th:draggable</td>
+</tr>
+<tr>
+  <td>th:dropzone</td>
+  <td>th:enctype</td>
+  <td>th:for</td>
+</tr>
+<tr>
+  <td>th:form</td>
+  <td>th:formaction</td>
+  <td>th:formenctype</td>
+</tr>
+<tr>
+  <td>th:formmethod</td>
+  <td>th:formtarget</td>
+  <td>th:frame</td>
+</tr>
+<tr>
+  <td>th:frameborder</td>
+  <td>th:headers</td>
+  <td>th:height</td>
+</tr>
+<tr>
+  <td>th:high</td>
+  <td>th:href</td>
+  <td>th:hreflang</td>
+</tr>
+<tr>
+  <td>th:hspace</td>
+  <td>th:http-equiv</td>
+  <td>th:icon</td>
+</tr>
+<tr>
+  <td>th:id</td>
+  <td>th:keytype</td>
+  <td>th:kind</td>
+</tr>
+<tr>
+  <td>th:label</td>
+  <td>th:lang</td>
+  <td>th:list</td>
+</tr>
+<tr>
+  <td>th:longdesc</td>
+  <td>th:low</td>
+  <td>th:manifest</td>
+</tr>
+<tr>
+  <td>th:marginheight</td>
+  <td>th:marginwidth</td>
+  <td>th:max</td>
+</tr>
+<tr>
+  <td>th:maxlength</td>
+  <td>th:media</td>
+  <td>th:method</td>
+</tr>
+<tr>
+  <td>th:min</td>
+  <td>th:name</td>
+  <td>th:optimum</td>
+</tr>
+<tr>
+  <td>th:pattern</td>
+  <td>th:placeholder</td>
+  <td>th:poster</td>
+</tr>
+<tr>
+  <td>th:preload</td>
+  <td>th:radiogroup</td>
+  <td>th:rel</td>
+</tr>
+<tr>
+  <td>th:rev</td>
+  <td>th:rows</td>
+  <td>th:rowspan</td>
+</tr>
+<tr>
+  <td>th:rules</td>
+  <td>th:sandbox</td>
+  <td>th:scheme</td>
+</tr>
+<tr>
+  <td>th:scope</td>
+  <td>th:scrolling</td>
+  <td>th:size</td>
+</tr>
+<tr>
+  <td>th:sizes</td>
+  <td>th:span</td>
+  <td>th:spellcheck</td>
+</tr>
+<tr>
+  <td>th:src</td>
+  <td>th:srclang</td>
+  <td>th:standby</td>
+</tr>
+<tr>
+  <td>th:start</td>
+  <td>th:step</td>
+  <td>th:style</td>
+</tr>
+<tr>
+  <td>th:summary</td>
+  <td>th:tabindex</td>
+  <td>th:target</td>
+</tr>
+<tr>
+  <td>th:title</td>
+  <td>th:type</td>
+  <td>th:usemap</td>
+</tr>
+<tr>
+  <td>th:value</td>
+  <td>th:valuetype</td>
+  <td>th:vspace</td>
+</tr>
+<tr>
+  <td>th:width</td>
+  <td>th:wrap</td>
+  <td>th:xmlbase</td>
+</tr>
+<tr>
+  <td>th:xmllang</td>
+  <td>th:xmlspace</td>
+  <td>th:alt-title 或th:lang-xmllang（如果其中两个属性值相同）</td>
+</tr>
+</tbody></table>
+
+对于 html5 元素名称的另一种友好写法
+
+```
+<table>
+    <tr data-th-each="user : ${users}">
+    <td data-th-text="${user.login}">...</td>
+    <td data-th-text="${user.name}">...</td> </tr>
+</table>
+```
