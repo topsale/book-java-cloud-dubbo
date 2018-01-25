@@ -17,4 +17,4 @@ Docker Compose 是一种用于通过使用单个命令创建和启动 Docker 应
 
 * 将应用程序环境变量放在 Docker 文件中以公开访问。
 * 在  `docker-compose.yml` 文件中提供和配置服务名称，以便它们可以在隔离的环境中一起运行。
-* 运行 `docker-compose`，`compose` 将启动并运行整个应用程序。
+* 运行 `docker-compose` 将启动并运行整个应用程序。
