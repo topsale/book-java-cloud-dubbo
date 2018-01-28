@@ -1,5 +1,6 @@
 {
-    "plugins": [
-        "expandable-chapters-small"
-    ]
+  "plugins": [
+    "expandable-chapters-small",
+    "popup"
+  ]
 }
