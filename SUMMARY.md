@@ -141,3 +141,8 @@
         * [Fiddler 命令行工具](附录/Fiddler/Fiddler命令行工具.md)
         * [Fiddler 会话管理](附录/Fiddler/Fiddler会话管理.md)
         * [Fiddler 手机抓包](附录/Fiddler/Fiddler手机抓包.md)
+    * [JRebel](附录/JRebel.md)
+        * [JRebel 简介](附录/JRebel/JRebel简介.md)
+        * [IDEA 安装 JRebel 插件](附录/JRebel/IDEA安装JRebel插件.md)
+    * [趣头条分析](附录/趣头条分析.md)
+        * [产品分析报告](附录/趣头条分析/产品分析报告.md)

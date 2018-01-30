@@ -1,4 +1,4 @@
-# 第七章 Thymeleaf 模板引擎
+# 第七章 集成 Thymeleaf 模板引擎
 
 ---
 
