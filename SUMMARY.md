@@ -132,6 +132,7 @@
     * [集成 tk.mybatis](chapter8/集成tkmybatis.md)
     * [集成 PageHelper](chapter8/集成PageHelper.md)
     * [MyBatis 插件自动生成代码](chapter8/MyBatisMavenPlugin自动生成代码.md)
+* [第九章 项目实战-搭建项目工程](chapter9.md)
 * [附录](附录.md)
     * [Fiddler](附录/fiddler.md)
         * [Fiddler 简介](附录/Fiddler/Fiddler简介.md)
