@@ -10,7 +10,7 @@ IDEA 中以此点击 `File` --> `Settings` --> `Plugins` 搜索并安装即可
 
 ## 激活
 
-* 确保你可也访问国外网站 [http://www.facebook.com](http://www.facebook.com)，并确保你有一个 Facebook 账号或者 Twitter 账号
+* 确保你可以访问国外网站 [http://www.facebook.com](http://www.facebook.com)，并确保你有一个 Facebook 账号或者 Twitter 账号
 * 访问 [https://my.jrebel.com](https://my.jrebel.com)，使用自己的 Facebook 账号登录
 
 ![](/assets/Lusifer1517278780.png)
