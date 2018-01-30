@@ -1,4 +1,4 @@
-# JRebel
+# IDEA 插件 JRebel
 
 ---
 
