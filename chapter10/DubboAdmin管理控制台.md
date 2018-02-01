@@ -38,3 +38,7 @@ http://localhost:8080/dubbo-admin/
 
 * 账号：root，密码：root
 * 账号：guest，密码：guest
+
+## 服务页面
+
+![](/assets/Lusifer1517526838.png)
