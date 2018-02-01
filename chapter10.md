@@ -23,3 +23,4 @@
     * [单机模式](/chapter10/Zookeeper安装/单机模式.md)
     * [伪集群模式](/chapter10/Zookeeper安装/伪集群模式.md)
     * [集群模式](/chapter10/Zookeeper安装/集群模式.md)
+* [Dubbo Admin 管理控制台](/chapter10/DubboAdmin管理控制台.md)
