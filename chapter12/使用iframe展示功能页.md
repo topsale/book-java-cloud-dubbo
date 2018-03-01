@@ -21,6 +21,14 @@
 <script src="/assets/plugins/nth-tabs.js" type="text/javascript"></script>
 ```
 
+## 添加页签包装节点
+
+```
+<div id="editor-tabs" class="nth-tabs"></div>
+```
+
+注：本项目中是添加在页面的 `<div class="m-grid__item m-grid__item--fluid m-wrapper"></div>` 节点中
+
 ## 初始化 JS 代码
 
 ```
