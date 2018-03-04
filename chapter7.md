@@ -17,3 +17,4 @@
     * [模板布局](/chapter7/Thymeleaf参考手册/模板布局.md)
     * [th:block](/chapter7/Thymeleaf参考手册/thblock.md)
     * [th:inline](/chapter7/Thymeleaf参考手册/thinline.md)
+* [Thymeleaf 自定义标签](/chapter7/Thymeleaf自定义标签.md)

@@ -62,3 +62,33 @@ public DataTable<Article> data(HttpServletRequest request) {
     return new DataTable<Article>(pageInfo);
 }
 ```
+
+## 关闭数据源的自动配置
+
+由于 `gaming-server-service-admin-api`、`gaming-server-service-admin`、`gaming-server-web-admin` 三个项目都需要依赖 PageHelper 插件，所以我们只需要在 `gaming-server-service-admin-api`  项目中添加相关依赖
+
+```
+<dependency>
+    <groupId>com.github.pagehelper</groupId>
+    <artifactId>pagehelper-spring-boot-starter</artifactId>
+</dependency>
+```
+
+但这里依赖的是 PageHelper 的 Starter POM ，该 Starter POM 会自动配置数据源，所以我们需要在 `gaming-server-web-admin` 项目中排除数据源的自动配置功能，修改 `GamingServerWebAdminApplication`
+
+```
+package com.ooqiu.gaming.server.web.admin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+public class GamingServerWebAdminApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(GamingServerWebAdminApplication.class, args);
+    }
+}
+```
+
+使用 `@SpringBootApplication` 注解的 `exclude` 参数，即可解决该问题
