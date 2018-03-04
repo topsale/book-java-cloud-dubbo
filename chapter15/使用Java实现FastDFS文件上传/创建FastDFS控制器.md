@@ -25,6 +25,7 @@ storage:
 ```
 package com.ooqiu.gaming.server.web.admin.controller;
 
+import com.google.common.collect.Maps;
 import com.ooqiu.gaming.server.web.admin.config.fastdfs.StorageService;
 import com.ooqui.gaming.server.commons.utils.MapperUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 文件上传控制器
@@ -69,7 +71,7 @@ public class UploadController {
                 map.put("url", FASTDFS_BASE_URL + uploadUrl);
             } catch (IOException e) {
                 map.put("error", 1);
-                map.put("message", "图片上传失败");
+                map.put("message", "上传失败");
             }
 
             return MapperUtils.mapToJson(map);
@@ -77,14 +79,22 @@ public class UploadController {
             String oName = wangEditorH5File.getOriginalFilename();
             String extName = oName.substring(oName.indexOf(".") + 1);
 
+            Map<String, Object> map = Maps.newHashMap();
+
             try {
                 String uploadUrl = storageService.upload(wangEditorH5File.getBytes(), extName);
                 String url = FASTDFS_BASE_URL + uploadUrl;
-                return url;
+
+                // 上传成功
+                map.put("errno", 0);
+                map.put("data", new String[]{url});
             } catch (IOException e) {
-                String error = "error|服务器端错误";
-                return error;
+                // 上传失败
+                map.put("errno", 1);
+                map.put("message", "服务端错误");
             }
+
+            return MapperUtils.mapToJson(map);
         }
 
         return "";
