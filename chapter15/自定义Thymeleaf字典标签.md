@@ -229,3 +229,36 @@ public class ThymeleafDialectConfig {
     </div>
 </div>
 ```
+
+## 关于无法在标签处理类中注入 Dubbo 服务的解决办法
+
+我们可以使用“曲线救国”的方式创建一个 Spring 的 `@Component` 组件，通过该组件实例化 Dubbo 服务即可
+
+```
+package com.ooqiu.gaming.server.web.admin.utils;
+
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.ooqiu.gaming.service.admin.api.DictService;
+import com.ooqui.gaming.server.commons.constant.DubboVersionConstant;
+import org.springframework.stereotype.Component;
+
+/**
+ * Dubbo 上下文工具
+ * 主要作用是在其它类里无法注入 Dubbo 服务时使用
+ * <p>Title: DubboContextUtils</p>
+ * <p>Description: </p>
+ *
+ * @author Lusifer
+ * @version 1.0.0
+ * @date 2018/3/4 13:10
+ */
+@Component
+public class DubboContextUtils {
+    @Reference(version = DubboVersionConstant.DUBBO_VERSION_GAMING_SERVER_SERVICE_ADMIN)
+    private DictService dictService;
+
+    public DictService getDictService() {
+        return dictService;
+    }
+}
+```
