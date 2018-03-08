@@ -222,6 +222,8 @@
 * [第18章 项目实战-客户端与服务端通信](chapter18.md)
     * [服务端关键代码](chapter18/服务端关键代码.md)
     * [客户端关键代码](chapter18/客户端关键代码.md)
+    * [解决跨域问题](chapter18/解决跨域问题.md)
+    * [SpringBoot 配置 CORS](chapter18/SpringBoot配置CORS.md)
 * [附录](附录.md)
     * [Fiddler](附录/fiddler.md)
         * [Fiddler 简介](附录/Fiddler/Fiddler简介.md)
