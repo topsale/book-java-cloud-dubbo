@@ -1,4 +1,10 @@
 {
+  "title": "鲁斯菲尔精品课-微服务从开发到部署",
+  "author": "李卫民",
+  "language": "zh-hans",
+  "styles": {
+    "custom": "styles/custom.css"
+  },
   "plugins": [
     "expandable-chapters-small",
     "popup"
