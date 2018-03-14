@@ -63,9 +63,9 @@ Runner registered successfully. Feel free to start it, but if it's running alrea
 * Whether to lock Runner to current project：直接回车，不用输入任何口令
 * Please enter the executor：选择 runner 类型，这里我们选择的是 shell
 
-CI 的地址和令牌，在 项目 --> 设置 --> 流水线：
+CI 的地址和令牌，在 项目 --> 设置 --> CI/CD --> Runner 设置：
 
-![](/assets/Lusifer1513120034.png)
+![](/assets/Lusifer1521043282.png)
 
 ## .gitlab-ci.yml
 
@@ -163,7 +163,7 @@ gpasswd -a gitlab-runner root
 * 配置需要操作目录的权限，比如你的 runner 要在 gaming 目录下操作：
 
 ```
-chmod 775 leeshop
+chmod 775 gaming
 ```
 
 * 由于我们的 shell 脚本中有执行 git pull 的命令，我们直接设置以 ssh 方式拉取代码：
@@ -178,7 +178,7 @@ cat id_rsa.pub
 
 * 复制 id_rsa.pub 中的秘钥到 GitLab：
 
-![](/assets/clipboard.png)
+![](/assets/Lusifer1521043534.png)
 
 * 通过 ssh 的方式将代码拉取到本地
 
