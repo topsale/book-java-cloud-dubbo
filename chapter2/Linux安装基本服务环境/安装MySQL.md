@@ -120,3 +120,36 @@ service mysql stop
 ```
 service mysql restart
 ```
+
+## 其它配置
+
+修改配置 `mysqld.cnf` 配置文件
+
+```
+vi /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+### 配置默认字符集
+
+在 `[mysqld]` 节点上增加如下配置
+
+```
+[client]
+default-character-set=utf8
+```
+
+在 `[mysqld]` 节点底部增加如下配置
+
+```
+default-storage-engine=INNODB
+character-set-server=utf8
+collation-server=utf8_general_ci
+```
+
+### 配置忽略数据库大小写敏感
+
+在 `[mysqld]` 节点底部增加如下配置
+
+```
+lower-case-table-names = 1
+```
