@@ -2,13 +2,13 @@
 
 ---
 
-我们使用 Docker 来安装和运行 GitLab 中文版，由于新版本问题较多，这里我们使用目前相对稳定的 10.5.7 版本，`docker-compose.yml` 配置如下：
+我们使用 Docker 来安装和运行 GitLab 中文版，由于新版本问题较多，这里我们使用目前相对稳定的 10.5 版本，`docker-compose.yml` 配置如下：
 
 ```
 version: '3'
 services:
     web:
-      image: 'twang2218/gitlab-ce-zh:10.5.7'
+      image: 'twang2218/gitlab-ce-zh:10.5'
       restart: always
       hostname: '192.168.75.145'
       environment:
