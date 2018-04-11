@@ -15,3 +15,18 @@ sudo passwd root
 ```
 su
 ```
+
+## 设置允许远程登录 Root
+
+```
+nano /etc/ssh/sshd_config
+
+# Authentication:
+LoginGraceTime 120
+#PermitRootLogin without-password     //注释此行
+PermitRootLogin yes                             //加入此行
+StrictModes yes
+
+重启服务
+service ssh restart
+```
