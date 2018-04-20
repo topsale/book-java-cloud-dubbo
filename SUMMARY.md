@@ -264,6 +264,7 @@
     * [GitLab 持续集成](chapter22/GitLab持续集成.md)
         * [GitLab CI](chapter22/GitLab持续集成/GitLabCI.md)
         * [GitLab Runner](chapter22/GitLab持续集成/GitLabRunner.md)
+        * [GitLab Runner Docker](chapter22/GitLab持续集成/GitLab-Runner-Docker.md)
     * [实战持续集成](chapter22/实战持续集成.md)
         * [Maven 私服搭建](chapter22/实战持续集成/Maven私服搭建.md)
         * [持续集成的实现思路](chapter22/实战持续集成/持续集成的实现思路.md)
